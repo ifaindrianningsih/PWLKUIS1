@@ -24,14 +24,14 @@
         </div>
 
         <div class="row">
-          
+          @foreach($data as $pegawai)
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
               <div class="member">
-                <!-- gambar -->
+                <img src="{{$pegawai->gambar}}">
 
-                <h4>Nama</h4>
-                <span>Jabatan</span>
-                <p>Deskripsi</p>
+                <h4>{{$pegawai->nama}}</h4>
+                <span>{{$pegawai->jabatan}}</span>
+                <p>{{$pegawai->deskripsi}}</p>
                 <div class="social"></div>
                 
                 <a href=""><i class="bi bi-twitter"></i></a>
@@ -40,7 +40,7 @@
                 <a href=""><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
-                
+                @endforeach
               </div>
 
 

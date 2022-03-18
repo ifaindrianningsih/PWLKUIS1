@@ -10,7 +10,7 @@
             <li><a class="nav-link scrollto" href="{{ url('contact')}}">Contact</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav>
+    </nav><!-- .navbar -->
 @endsection
 
 @section('content')

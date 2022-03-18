@@ -24,21 +24,19 @@
         </div>
 
         <div class="row">
-        
+        @foreach($data as $supp)
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="icon-box">
             <div class="icon"><i class="bx bx-cart"></i></div>
-              <h4><a href="">nama_supplier</a></h4>
-              <p>jenis</p>
+              <h4><a href="">{{$supp->nama_supplier}}</a></h4>
+              <span>{{$supp->jenis}}</span>
+              <p>{{$supp->addres}}</p>
+              <p>{{$supp->contact}}</p>
               <p>____________________________</p>
-              <p>address</p>
-              <p>____________________________</p>
-              <p>contact</p>
-              <p>____________________________</p>
-              <p>phone</p>
+              <p>{{$supp->phonet}}</p>
             </div>
           </div>
-          
+          @endforeach
         </div>
 
       

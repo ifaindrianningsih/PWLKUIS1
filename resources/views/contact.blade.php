@@ -10,11 +10,10 @@
             <li><a class="nav-link {{$active}}" href="{{ url('contact')}}">Contact</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav>
+    </nav><!-- .navbar -->
 @endsection
 
 @section('content')
-    
     <section id="contact" class="contact">
         <div class="container">
 

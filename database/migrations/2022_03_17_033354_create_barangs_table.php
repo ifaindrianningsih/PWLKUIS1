@@ -18,7 +18,7 @@ class CreateBarangsTable extends Migration
             $table->String('nama_mobil', 25);
             $table->String('gambar');
             $table->String('harga', 25);
-            $table->String('transmisi',15);
+            $table->String('transmisi',25);
             $table->String('bahan_bakar',15);
             $table->String('mesin', 25);
             $table->integer('tempat_duduk');
