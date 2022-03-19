@@ -9,7 +9,7 @@ class SupplierController extends Controller
 {
     public function index()
     {
-        $data = supplier::all();
+        $data = supplier::paginate(5);
         return view('supplier', ['active'=>'active', 'title'=>'Supplier'], compact('data'));
     }
 }
