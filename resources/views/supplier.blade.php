@@ -39,6 +39,10 @@
           @endforeach
         </div>
 
+        <div class="pull-right">
+            {{$data->links()}}
+        </div>
+
       
     </section><!-- End Services Section -->
 

@@ -39,6 +39,10 @@
             </div>
           </div>
           @endforeach
+
+          <div class="pull-right">
+            {{$data->links()}}
+          </div>
         </div>
 
       </div>
